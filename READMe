@@ -1,0 +1,53 @@
+#################################################################
+#                     Dependendies
+#################################################################
+1: sqlite
+2: java jdk 8 or 1.8
+
+#################################################################
+#                     Main-User
+#################################################################
+
+ 1: Admin
+ 	By default database has only one admin
+ 	name: admin
+ 	pass: admin
+ 	
+ 	however admin can be inserted directly into Data.db.
+ 	
+ 	a: admin can approve/deny requests of user.
+ 	b: admin can delete request of user.
+ 	c: admin can view the accounts of all users. 
+ 
+ 2: User 
+ 	By default database has two users 
+ 	1: name: user1
+ 	   pass: 1234
+ 	   
+ 	2: name: user2
+ 	   pass: 12345
+ 	
+ 	You can add user using GUI or directly insert into database.
+ 	
+ 	a: user can add movie details but it will not show in database until admin approves it.
+ 	b: user can make changes to existing data after admin's approval.
+ 	c: user can view all the movies.
+ 	
+ 3: Guest:
+ 	guest has no functionalities other than viewing movies
+ 
+ #################################################################
+ #                       How to Execute
+ #################################################################
+ 
+ IDE:
+ 1: Load all the files either in netbeans or any other ide.
+ 
+ 
+ Command prompt/ Terminal: 
+ 1: enter the following commands
+ 
+ compile: > javac -cp sqlite-jdbc-3.8.11.2.jar: Main.java
+ Run:     > java  -cp sqlite-jdbc-3.8.11.2.jar: Main
+ 
+ 
